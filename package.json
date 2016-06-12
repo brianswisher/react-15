@@ -1,0 +1,34 @@
+{
+  "name": "react-15",
+  "version": "1.0.0",
+  "description": "Builds DEV & PROD dists that load to a namespace.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:dev && npm run build:prod",
+    "build:dev": "./node_modules/.bin/webpack ./source/React15.js ./dist/react-15.js",
+    "build:prod": "./node_modules/.bin/webpack --p ./source/React15Prod.js ./dist/react-15.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Swisher",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-register": "^6.9.0",
+    "eslint": "^2.11.1",
+    "eslint-config-standard": "^5.3.1",
+    "eslint-config-standard-jsx": "^1.2.1",
+    "eslint-config-standard-react": "^2.4.0",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-promise": "^1.3.2",
+    "eslint-plugin-react": "^5.1.1",
+    "eslint-plugin-standard": "^1.3.2",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "standard": "^7.1.2",
+    "webpack": "^1.13.1"
+  }
+}
